@@ -14,5 +14,4 @@ home-manager switch
 update home-manager
 ```
 nix-channel --update nixpkgs
-nix-env -u home-manager
 ```
