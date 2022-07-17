@@ -9,7 +9,7 @@ right_format = """$battery$character"""
 [status]
 style = "bg:blue"
 symbol = "🔴 "
-success_symbol = "🟢 SUCCESS"
+success_symbol = "🟢 "
 format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style) '
 map_symbol = true
 disabled = false
@@ -22,8 +22,8 @@ symbol = " "
 style = "fg:#252525 bg:#6f6565"
 
 [character]
-success_symbol = "[](bold cyan)"
-error_symbol = "[](bold red)"
+success_symbol = "[](cyan)"
+error_symbol = "[](red)"
 
 [battery]
 full_symbol = ""
@@ -33,7 +33,7 @@ format = "[ $symbol$percentage ](fg:#fff1cf)"
 threshold = 100
 
 [time]
-format = '[$time ](fg:#fff1cf bg:#6f6565)'
+format = '[\[$time\] ](fg:#fff1cf bg:#6f6565)'
 utc_time_offset = "local"
 time_format = "%T"
 disabled = false
@@ -45,12 +45,12 @@ symbol = "/"
 
 [shell]
 bash_indicator = "[](fg:#c4c431 bg:#6f6565)[BSH-MODE](fg:#fff1cf bg:#c4c431)[](fg:#c4c431 bg:#6f6565)[  ](fg:#c4c431 bg:#6f6565)[](fg:#6f6565)"
-zsh_indicator = "[](fg:#94b3a8 bg:#6f6565)[ZSH-MODE](fg:#fff1cf bg:#94b3a8)[](fg:#94b3a8 bg:#6f6565)[  ](fg:#94b3a8 bg:#6f6565)[](fg:#6f6565)"
-nu_indicator = "[](fg:#fe6142 bg:#6f6565)[NSH-MODE](fg:#fff1cf bg:#fe6142)[](fg:#fe6142 bg:#6f6565)[  ](fg:#fe6142 bg:#6f6565)[](fg:#6f6565)"
+zsh_indicator = "[](fg:#94b3a8 bg:#6f6565)[ZSH-MODE](fg:#fff1cf bg:#94b3a8)[](fg:#94b3a8)"
+nu_indicator = "[](fg:#fe6142 bg:#6f6565)[NSH-MODE](fg:#fff1cf bg:#fe6142)[](fg:#fe6142)"
 fish_indicator = "[](fg:#5442f5 bg:#6f6565)[FSH-MODE](fg:#fff1cf bg:#5442f5)[](fg:#5442f5 bg:#6f6565)[  ](fg:#5442f5 bg:#6f6565)[](fg:#6f6565)"
 elvish_indicator = "[](fg:#a742f5 bg:#6f6565)[ESH-MODE](fg:#fff1cf bg:#a742f5)[](fg:#a742f5 bg:#6f6565)[  ](fg:#a742f5 bg:#6f6565)[](fg:#6f6565)"
 unknown_indicator = "[](fg:#fff1cf bg:#6f6565)[???-MODE][](fg:#6f6565)"
-style = "fg:#fff1cf bg:#6f6565"
+style = "fg:#6f6565 bg:#6f6565"
 disabled = false
 
 [directory]
@@ -61,13 +61,14 @@ truncate_to_repo = false
 truncation_length = 100
 read_only = '  '
 read_only_style = "fg:#fff1cf bg:#6f6565"
-home_symbol = " "
+home_symbol = "呂"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]](fg:#fff1cf bg:#6f6565)[ ](fg:#fff1cf bg:#6f6565))'
 
 [username]
-format = "[  ](fg:#252525 bg:#fff1cf bold)[ ](fg:#fff1cf bg:#6f6565 bold)"
-# format = "[ ](fg:#252525 bg:#fff1cf bold)[ ](fg:#fff1cf bg:#6f6565 bold)"
+format = "[](fg:#6f6565)"
+# format = "[   ](fg:#252525 bg:#fff1cf)[ ](fg:#fff1cf bg:#6f6565)"
+# format = "[ ](fg:#252525 bg:#fff1cf)[ ](fg:#fff1cf bg:#6f6565)"
 show_always = true
 disabled = false

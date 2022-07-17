@@ -6,6 +6,9 @@
     username = "$USER";
     homeDirectory = "/Users/$USER";
     stateVersion = "22.05";
+    sessionVariables = {
+      EDITOR = "nvim";
+    };
   };
 
   imports = [
@@ -13,12 +16,16 @@
     # ./nix
     # ./direnv
 
+    # git
+    ./bundle/git
+
     # commands
-    # ./bat
+    ./bundle/bat
     ./bundle/exa
 
     # shell
-    ./bundle/starship
     ./bundle/zsh
+    ./bundle/nushell
+    ./bundle/starship
   ];
 }
