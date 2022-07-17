@@ -12,9 +12,8 @@
   };
 
   imports = [
-    # nix
-    # ./nix
-    # ./direnv
+    # vim
+    ./bundle/neovim
 
     # git
     ./bundle/git

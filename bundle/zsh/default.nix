@@ -17,8 +17,8 @@
       "sz" = "source ~/.zshrc";
 
       # vim
-      "vi" = "nvim";
-      "vim" = "nvim";
+      # "vi" = "nvim";
+      # "vim" = "nvim";
 
       # home-manager
       "hms" = "home-manager switch";
